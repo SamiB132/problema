@@ -26,7 +26,12 @@ int main ()
             {
                 cout<<"\n\nCe tip de adaugare se va realiza: \n1|Adaugare la inceput\t2|Adaugare la sfarsit\t3|Adaugare dupa element dat\n\n";
                 cin>>operatie1;
-                while(operatie1<1 or operatie1>3) cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Adaugare la inceput\t2|Adaugare la sfarsit\t3|Adaugare dupa element dat\n";
+                while(operatie1<1 or operatie1>3) 
+                   {
+                      cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Adaugare la inceput\t2|Adaugare la sfarsit\t3|Adaugare dupa element dat\n";
+                      cin>>operatie1;
+                   }
+                    
                 switch(operatie1)
                 {
                     case 1:
@@ -51,7 +56,11 @@ int main ()
             {
                 cout<<"\n\nCe tip de cautare se va realiza: \n1|Cautare dupa pozitie\t2|Cautare dupa valoare\n\n";
                 cin>>operatie1;
-                while(operatie1<1 or operatie1>2) cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Cautare dupa pozitie\t2|Cautare dupa valoare\n";
+                while(operatie1<1 or operatie1>2) 
+                {
+                  cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Cautare dupa pozitie\t2|Cautare dupa valoare\n";
+                  cin>>operatie1;
+               }
                 switch(operatie1)
                 {
                     case 1:
@@ -71,7 +80,10 @@ int main ()
             {
                 cout<<"\n\nCe tip de stergere se va realiza: \n1|Stergere pozitie\t2|Stergere valoare\n\n";
                 cin>>operatie1;
-                while(operatie1<1 or operatie1>2) cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Stergere pozitie\t2|Stergere valoare\n";
+                while(operatie1<1 or operatie1>2) 
+                {cout<<"\n\nOperatiile care se pot realiza sunt: \n1|Stergere pozitie\t2|Stergere valoare\n";
+                  cin>>operatie1;
+               }
                 switch(operatie1)
                 {
                     case 1:
@@ -95,7 +107,10 @@ int main ()
         }
         cout<<"\nCe operatie va fi efectuata: \n1|Adaugare\t2|Cautare\t3|Stergere\t4|Afisare\n\n";
         cin>>operatie;
-        while(operatie<0 or operatie>4) cout<<"\n\nOperatiile posibile sunt: \n1|Adaugare\t2|Cautare\t3|Stergere\t4|Afisare\n";
+        while(operatie<0 or operatie>4) 
+           {cout<<"\n\nOperatiile posibile sunt: \n1|Adaugare\t2|Cautare\t3|Stergere\t4|Afisare\n";
+            cin>>operatie;
+         }
    }while(operatie!=0);
 
    return 0;
